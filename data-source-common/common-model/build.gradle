@@ -1,0 +1,6 @@
+project(":data-source-common:common-model") {
+  dependencies {
+    api project(":data-source-common")
+  }
+}
+

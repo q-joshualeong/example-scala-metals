@@ -1,0 +1,6 @@
+rootProject.name = 'example-scala-metals'
+
+include ":data-source-person"
+include ":data-source-person:person-model"
+include ":data-source-common"
+include ":data-source-common:common-model"

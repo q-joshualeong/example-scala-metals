@@ -1,0 +1,31 @@
+buildscript {
+  repositories {
+    // Add here whatever repositories you're already using
+    mavenCentral()
+  }
+
+  dependencies {
+    classpath 'ch.epfl.scala:gradle-bloop_2.12:1.6.2'
+  }
+}
+
+
+subprojects {
+  apply plugin: 'scala'
+  apply plugin: 'bloop'
+  apply plugin: 'java-library'
+
+  dependencies {
+    implementation 'org.scala-lang:scala-library:2.12.17'
+  }
+
+  repositories {
+    mavenCentral()
+  }
+
+}
+
+
+allprojects {
+  apply plugin: 'bloop'
+}

@@ -1,0 +1,5 @@
+project (":data-source-person") {
+  dependencies {
+    api project(":data-source-common")
+  }
+}
