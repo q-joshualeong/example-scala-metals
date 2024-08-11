@@ -10,7 +10,9 @@ buildscript {
 }
 
 
-subprojects {
+allprojects {
+  apply plugin: 'bloop'
+
   apply plugin: 'scala'
   apply plugin: 'bloop'
   apply plugin: 'java-library'
@@ -22,10 +24,4 @@ subprojects {
   repositories {
     mavenCentral()
   }
-
-}
-
-
-allprojects {
-  apply plugin: 'bloop'
 }
